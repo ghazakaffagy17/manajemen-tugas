@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manajemen Tugas</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <div id="auth-overlay" class="auth-wrapper">
+    <div class="auth-card-clean">
+      <div class="auth-brand-clean">
+        <div class="logo-icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h2 style="font-size: 20px; font-weight: 700;">Manajemen Tugas</h2>
+        <p style="color: var(--text-secondary); font-size: 13px; margin-top: 4px;">Workspace Tugas Perkuliahan Mahasiswa
+        </p>
+      </div>
+
+      <div class="auth-tabs-clean">
+        <div class="auth-tab-clean active" id="tab-login" onclick="switchAuthTab('login')">Masuk</div>
+        <div class="auth-tab-clean" id="tab-register" onclick="switchAuthTab('register')">Daftar Akun</div>
+      </div>
+
+      <form id="form-login" onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" class="form-control" placeholder="mahasiswa@gmail.com" required
+            value="budi@gmail.com">
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <div style="position: relative;">
+            <input type="password" id="login-password" class="form-control" placeholder="••••••••" required>
+            <i class="fa-regular fa-eye" id="toggle-pwd-btn"
+              onclick="togglePasswordVisibility('login-password', 'toggle-pwd-btn')"
+              style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); cursor: pointer; font-size: 14px;"></i>
+          </div>
+        </div>
+        <button type="submit" class="btn-primary"
+          style="width: 100%; justify-content: center; padding: 10px; margin-top: 10px;">
+          Masuk Ke App
+        </button>
+      </form>
+
+      <form id="form-register" onsubmit="handleRegister(event)" style="display: none;">
+        <div class="form-group">
+          <label for="reg-name">Nama Lengkap</label>
+          <input type="text" id="reg-name" class="form-control" placeholder="Contoh: Budi Pratama" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-email">Email</label>
+          <input type="email" id="reg-email" class="form-control" placeholder="budi@gmail.com" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="reg-univ">Universitas</label>
+            <input type="text" id="reg-univ" class="form-control" placeholder="Universitas Indonesia">
+          </div>
+          <div class="form-group">
+            <label for="reg-major">Program Studi</label>
+            <input type="text" id="reg-major" class="form-control" placeholder="Teknik Informatika">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="reg-password">Password</label>
+          <input type="password" id="reg-password" class="form-control" placeholder="Minimal 6 karakter" required>
+        </div>
+        <button type="submit" class="btn-primary"
+          style="width: 100%; justify-content: center; padding: 10px; margin-top: 10px;">
+          Buat Akun Baru
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div id="app-container">
+
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-header">
+        <div class="brand-icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="brand-text">
+          <h2>Manajemen Tugas</h2>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Menu Utama</div>
+        <div class="nav-item active" onclick="switchView('dashboard')" id="nav-dashboard">
+          <i class="fa-solid fa-house"></i> Dashboard
+        </div>
+        <div class="nav-item" onclick="switchView('kanban')" id="nav-kanban">
+          <i class="fa-solid fa-square-kanban"></i> Papan Kanban
+          <span class="nav-badge" id="badge-pending-count">0</span>
+        </div>
+        <div class="nav-item" onclick="switchView('tasks-list')" id="nav-tasks-list">
+          <i class="fa-solid fa-list-check"></i> Daftar Tabel
+        </div>
+
+        <div class="nav-section-title">Akademik</div>
+        <div class="nav-item" onclick="switchView('courses')" id="nav-courses">
+          <i class="fa-solid fa-book"></i> Mata Kuliah
+        </div>
+        <div class="nav-item" onclick="switchView('schedule')" id="nav-schedule">
+          <i class="fa-solid fa-calendar"></i> Jadwal Kuliah
+        </div>
+
+        <div class="nav-section-title">Pengaturan</div>
+        <div class="nav-item" onclick="switchView('settings')" id="nav-settings">
+          <i class="fa-solid fa-gear"></i> Pengaturan Akun
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-profile-card" onclick="switchView('settings')">
+          <img id="user-avatar-img" src="https://api.dicebear.com/7.x/bottts/svg?seed=Student" class="user-avatar"
+            alt="Avatar">
+          <div class="user-info">
+            <h4 id="user-display-name">Mahasiswa</h4>
+            <p id="user-display-univ">Universitas Muhammadiyah Malang</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main-wrapper">
+
+      <header class="top-navbar">
+        <button class="btn-icon" id="toggle-sidebar-mobile" onclick="toggleMobileSidebar()" style="display: none;">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="nav-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="global-search-input" placeholder="Cari tugas atau matkul..."
+            oninput="handleGlobalSearch(this.value)">
+        </div>
+
+        <div class="navbar-actions">
+          <button class="btn-icon" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+          </button>
+
+          <button class="btn-primary" onclick="openTaskModal()">
+            <i class="fa-solid fa-plus"></i> Tambah Tugas
+          </button>
+        </div>
+      </header>
+
+      <main class="view-container">
+
+        <section id="view-dashboard" class="page-view active">
+          <div class="page-header">
+            <div>
+              <h1 id="dashboard-welcome-heading">Selamat Datang 👋</h1>
+              <p>Ringkasan tugas & jadwal perkuliahan Anda.</p>
+            </div>
+            <div
+              style="font-size: 12px; color: var(--text-secondary); background: var(--bg-card); padding: 6px 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+              <i class="fa-regular fa-calendar"></i> <span id="current-date-text">Semester 2025/2026</span>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fa-solid fa-list-check"></i>
+              </div>
+              <div class="stat-info">
+                <h3 id="stat-total-tasks">0</h3>
+                <p>Total Tugas</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon" style="color: var(--accent-rose);">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div class="stat-info">
+                <h3 id="stat-urgent-tasks">0</h3>
+                <p>Deadline &lt; 3 Hari</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon" style="color: var(--accent-emerald);">
+                <i class="fa-regular fa-circle-check"></i>
+              </div>
+              <div class="stat-info">
+                <h3 id="stat-completed-tasks">0</h3>
+                <p>Tugas Selesai</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fa-solid fa-book"></i>
+              </div>
+              <div class="stat-info">
+                <h3 id="stat-total-courses">0</h3>
+                <p>Mata Kuliah</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+
+            <div class="panel-card">
+              <div class="panel-header">
+                <h3><i class="fa-solid fa-clock" style="color: var(--accent-rose);"></i> Deadline Mendatang</h3>
+                <button class="btn-secondary" onclick="switchView('kanban')"
+                  style="padding: 4px 10px; font-size: 11px;">Lihat Semua</button>
+              </div>
+              <div id="urgent-tasks-container" class="urgent-list">
+
+              </div>
+            </div>
+
+            <div>
+              <div class="panel-card">
+                <div class="panel-header">
+                  <h3><i class="fa-solid fa-chart-simple"></i> Progres Matkul</h3>
+                </div>
+                <div id="course-progress-list" style="display: flex; flex-direction: column; gap: 14px;">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="view-kanban" class="page-view">
+          <div class="page-header">
+            <div>
+              <h1>Papan Kanban</h1>
+              <p>Kelola status pengerjaan tugas perkuliahan Anda.</p>
+            </div>
+          </div>
+
+          <div class="kanban-view-header">
+            <div class="filter-bar">
+              <select id="filter-course" class="select-input" onchange="applyFilters()">
+                <option value="">Semua Matkul</option>
+              </select>
+
+              <select id="filter-priority" class="select-input" onchange="applyFilters()">
+                <option value="">Semua Prioritas</option>
+                <option value="Tinggi">Tinggi</option>
+                <option value="Sedang">Sedang</option>
+                <option value="Rendah">Rendah</option>
+              </select>
+
+              <select id="filter-type" class="select-input" onchange="applyFilters()">
+                <option value="">Semua Jenis</option>
+                <option value="Individu">Individu</option>
+                <option value="Kelompok">Kelompok</option>
+                <option value="Praktikum">Praktikum</option>
+                <option value="Kuis">Kuis</option>
+                <option value="UTS/UAS">UTS / UAS</option>
+              </select>
+            </div>
+
+            <div class="view-switcher">
+              <button class="view-btn active" onclick="switchView('kanban')">
+                <i class="fa-solid fa-table-columns"></i> Kanban
+              </button>
+              <button class="view-btn" onclick="switchView('tasks-list')">
+                <i class="fa-solid fa-list"></i> Tabel
+              </button>
+            </div>
+          </div>
+
+          <div class="kanban-board">
+            <div class="kanban-column">
+              <div class="column-header">
+                <div class="column-title">
+                  <span class="dot-status dot-todo"></span> Belum Dikerjakan
+                </div>
+                <span class="column-count" id="count-todo">0</span>
+              </div>
+              <div class="task-cards-list" id="col-todo"></div>
+            </div>
+
+            <div class="kanban-column">
+              <div class="column-header">
+                <div class="column-title">
+                  <span class="dot-status dot-inprogress"></span> Sedang Dikerjakan
+                </div>
+                <span class="column-count" id="count-inprogress">0</span>
+              </div>
+              <div class="task-cards-list" id="col-inprogress"></div>
+            </div>
+
+            <div class="kanban-column">
+              <div class="column-header">
+                <div class="column-title">
+                  <span class="dot-status dot-done"></span> Selesai
+                </div>
+                <span class="column-count" id="count-done">0</span>
+              </div>
+              <div class="task-cards-list" id="col-done"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="view-tasks-list" class="page-view">
+          <div class="page-header">
+            <div>
+              <h1>Daftar Tabel Tugas</h1>
+              <p>Ringkasan berbentuk tabel seluruh tugas kuliah.</p>
+            </div>
+          </div>
+
+          <div class="task-table-container">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th>Tugas</th>
+                  <th>Mata Kuliah</th>
+                  <th>Jenis</th>
+                  <th>Prioritas</th>
+                  <th>Deadline</th>
+                  <th>Status</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody id="task-table-body">
+
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="view-courses" class="page-view">
+          <div class="page-header">
+            <div>
+              <h1>Mata Kuliah</h1>
+              <p>Daftar subjek mata kuliah beserta dosen & jadwal.</p>
+            </div>
+            <button class="btn-primary" onclick="openCourseModal()">
+              <i class="fa-solid fa-plus"></i> Tambah Matkul
+            </button>
+          </div>
+
+          <div class="courses-grid" id="courses-grid-container">
+
+          </div>
+        </section>
+
+        <section id="view-schedule" class="page-view">
+          <div class="page-header">
+            <div>
+              <h1>Jadwal Mingguan</h1>
+              <p>Jadwal perkuliahan mingguan berdasarkan mata kuliah yang didaftarkan.</p>
+            </div>
+          </div>
+
+          <div class="timetable-grid" id="timetable-container">
+
+          </div>
+        </section>
+
+        <section id="view-settings" class="page-view">
+          <div class="page-header">
+            <div>
+              <h1>Pengaturan Akun</h1>
+              <p>Kelola data profil dan backup.</p>
+            </div>
+          </div>
+
+          <div class="panel-card" style="max-width: 500px;">
+            <div class="panel-header">
+              <h3><i class="fa-solid fa-user"></i> Informasi Akun</h3>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+              <img id="settings-avatar" src="https://api.dicebear.com/7.x/bottts/svg?seed=Student" class="user-avatar"
+                style="width: 56px; height: 56px;">
+              <div>
+                <h3 id="settings-name" style="font-size: 18px;">Mahasiswa</h3>
+                <p id="settings-email" style="color: var(--text-secondary); font-size: 13px;">email@mahasiswa.ac.id</p>
+                <span id="settings-univ" class="priority-tag priority-sedang"
+                  style="margin-top: 6px; display: inline-block;">Universitas</span>
+              </div>
+            </div>
+
+            <div
+              style="border-top: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 12px; margin-top: 16px; padding-top: 16px;">
+              <button class="btn-secondary" onclick="exportDataJSON()" style="justify-content: flex-start;">
+                <i class="fa-solid fa-download"></i> Ekspor Backup JSON
+              </button>
+
+              <button class="btn-primary" onclick="handleLogout()"
+                style="background: var(--accent-rose); border-color: var(--accent-rose); justify-content: flex-start; margin-top: 8px;">
+                <i class="fa-solid fa-right-from-bracket"></i> Keluar (Logout)
+              </button>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-task">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modal-task-title">Tambah Tugas Baru</h3>
+        <button class="modal-close" onclick="closeTaskModal()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <form id="form-task" onsubmit="saveTask(event)">
+          <input type="hidden" id="task-id">
+
+          <div class="form-group">
+            <label for="task-title-input">Judul Tugas *</label>
+            <input type="text" id="task-title-input" class="form-control"
+              placeholder="Contoh: Laporan Praktikum Web API" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+                <label for="task-course-select" style="margin-bottom: 0;">Mata Kuliah *</label>
+                <a href="javascript:void(0)" onclick="openCourseModal()"
+                  style="font-size: 11px; font-weight: 600; color: var(--accent-indigo);">+ Tambah Matkul</a>
+              </div>
+              <select id="task-course-select" class="form-control" required>
+
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="task-type-select">Jenis Tugas</label>
+              <select id="task-type-select" class="form-control">
+                <option value="Individu">Individu</option>
+                <option value="Kelompok">Kelompok</option>
+                <option value="Praktikum">Praktikum</option>
+                <option value="Kuis">Kuis</option>
+                <option value="UTS/UAS">UTS / UAS</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="task-priority-select">Tingkat Prioritas (Otomatis Sesuai Deadline)</label>
+              <select id="task-priority-select" class="form-control" disabled style="background: var(--bg-muted); cursor: not-allowed;">
+                <option value="Tinggi">Tinggi (&le; 24 Jam)</option>
+                <option value="Sedang">Sedang (1 - 3 Hari)</option>
+                <option value="Rendah">Rendah (&gt; 3 Hari)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="task-status-select">Status Pengerjaan</label>
+              <select id="task-status-select" class="form-control">
+                <option value="Belum Dikerjakan">Belum Dikerjakan</option>
+                <option value="Sedang Dikerjakan">Sedang Dikerjakan</option>
+                <option value="Selesai">Selesai</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="task-deadline-input">Deadline *</label>
+            <input type="datetime-local" id="task-deadline-input" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="task-link-input">Link Referensi / Repository (Opsional)</label>
+            <input type="url" id="task-link-input" class="form-control" placeholder="https://...">
+          </div>
+
+          <div class="form-group">
+            <label for="task-desc-input">Deskripsi Catatan</label>
+            <textarea id="task-desc-input" class="form-control" rows="3"
+              placeholder="Tulis instruksi tugas..."></textarea>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+            <button type="button" class="btn-secondary" onclick="closeTaskModal()">Batal</button>
+            <button type="submit" class="btn-primary">Simpan Tugas</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-course">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modal-course-title">Tambah Mata Kuliah</h3>
+        <button class="modal-close" onclick="closeCourseModal()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <form id="form-course" onsubmit="saveCourse(event)">
+          <input type="hidden" id="course-id">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="course-name-input">Nama Matkul *</label>
+              <input type="text" id="course-name-input" class="form-control" placeholder="Basis Data Terdistribusi"
+                required>
+            </div>
+            <div class="form-group">
+              <label for="course-code-input">Kode Matkul</label>
+              <input type="text" id="course-code-input" class="form-control" placeholder="IF-302">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="course-lecturer-input">Dosen Pengampu</label>
+              <input type="text" id="course-lecturer-input" class="form-control" placeholder="Prof. Rina Suryani">
+            </div>
+            <div class="form-group">
+              <label for="course-credits-input">SKS</label>
+              <input
+              type="text"
+              id="course-credits-input"
+              class="form-control"
+              value="3"
+              inputmode="numeric"
+              placeholder="Masukkan 1-6"
+            >
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="course-day-select">Hari Kuliah</label>
+              <select id="course-day-select" class="form-control">
+                <option value="Senin">Senin</option>
+                <option value="Selasa">Selasa</option>
+                <option value="Rabu">Rabu</option>
+                <option value="Kamis">Kamis</option>
+                <option value="Jumat">Jumat</option>
+                <option value="Sabtu">Sabtu</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="course-time-input">Jam Kuliah</label>
+              <input type="text" id="course-time-input" class="form-control" placeholder="08:00 - 10:30">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="course-room-input">Ruangan</label>
+              <input type="text" id="course-room-input" class="form-control" placeholder="Ruang D-204">
+            </div>
+            <div class="form-group">
+              <label for="course-color-input">Warna Tag</label>
+              <input type="color" id="course-color-input" class="form-control" value="#18181b"
+                style="height: 38px; padding: 2px;">
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+            <button type="button" class="btn-secondary" onclick="closeCourseModal()">Batal</button>
+            <button type="submit" class="btn-primary">Simpan Matkul</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-task-detail">
+    <div class="modal-box" style="max-width: 520px;">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="task-course-badge" id="detail-course-badge">MATKUL</span>
+          <span class="priority-tag" id="detail-priority-tag">Prioritas</span>
+        </div>
+        <button class="modal-close" onclick="closeTaskDetailModal()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="detail-title" style="font-size: 18px; font-weight: 700; margin-bottom: 6px;">Judul Tugas</h2>
+        <p id="detail-desc"
+          style="color: var(--text-secondary); font-size: 13px; margin-bottom: 18px; white-space: pre-wrap;"></p>
+
+        <div
+          style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; background: var(--bg-muted); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); margin-bottom: 18px; font-size: 12px;">
+          <div>
+            <span style="color: var(--text-muted);">Deadline:</span>
+            <div id="detail-deadline" style="font-weight: 600; color: var(--accent-rose); margin-top: 2px;">-</div>
+          </div>
+          <div>
+            <span style="color: var(--text-muted);">Jenis & Link:</span>
+            <div id="detail-link" style="margin-top: 2px;">-</div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 18px;">
+          <h4
+            style="font-size: 13px; font-weight: 600; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between;">
+            <span>Checklist Sub-Tugas</span>
+            <span id="detail-subtask-ratio"
+              style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted);">0/0</span>
+          </h4>
+
+          <div id="detail-subtasks-list" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px;">
+
+          </div>
+
+          <form onsubmit="handleAddSubtask(event)" style="display: flex; gap: 8px;">
+            <input type="text" id="new-subtask-input" class="form-control" placeholder="Tambah sub-tugas..." required
+              style="padding: 8px 10px; font-size: 12px;">
+            <button type="submit" class="btn-secondary" style="padding: 8px 12px;"><i
+                class="fa-solid fa-plus"></i></button>
+          </form>
+        </div>
+
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); margin-top: 16px; padding-top: 14px;">
+          <button class="btn-secondary" onclick="deleteCurrentTask()" style="color: var(--accent-rose);">
+            <i class="fa-solid fa-trash"></i> Hapus
+          </button>
+
+          <div style="display: flex; gap: 8px;">
+            <button class="btn-secondary" onclick="editCurrentTaskFromDetail()">
+              <i class="fa-solid fa-pen"></i> Edit
+            </button>
+            <button class="btn-primary" onclick="closeTaskDetailModal()">Tutup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="/js/app.js"></script>
+
+  <script>
+    function togglePasswordVisibility(inputId, btnId) {
+      const input = document.getElementById(inputId);
+      const btn = document.getElementById(btnId);
+      if (input.type === 'password') {
+        input.type = 'text';
+        btn.className = 'fa-regular fa-eye-slash';
+      } else {
+        input.type = 'password';
+        btn.className = 'fa-regular fa-eye';
+      }
+    }
+  </script>
+</body>
+
+</html>

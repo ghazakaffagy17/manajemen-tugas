@@ -1,0 +1,402 @@
+[
+  {},
+  {},
+  {
+    "id": "t_1787665356235_on87m",
+    "userId": "u_1787657411466_aon16",
+    "courseId": "c_1787664033747_cyvbt",
+    "title": "oyi",
+    "description": "",
+    "type": "Praktikum",
+    "priority": "Sedang",
+    "status": "Selesai",
+    "deadline": "2026-08-26T16:59:00.000Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-08-25T13:42:36.235Z"
+  },
+  {
+    "id": "t_1788254944788_cz9fy",
+    "userId": "u_1788254944763_xvprs",
+    "courseId": "c_1788254944778_ekj68",
+    "title": "Laporan PKPL Otomasi",
+    "description": "Dokumentasi Modul 5 PKPL",
+    "type": "Praktikum",
+    "priority": "Tinggi",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-01T21:29:04.896Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-01T09:29:04.788Z"
+  },
+  {
+    "id": "t_1788255473278_hnhwx",
+    "userId": "u_1788255473258_9u8f3",
+    "courseId": "c_1788255473271_1m2gw",
+    "title": "Tugas Status",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Sedang Dikerjakan",
+    "deadline": "2026-09-08T09:37:53.274Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-01T09:37:53.278Z"
+  },
+  {
+    "id": "t_1788255870696_yuq1x",
+    "userId": "u_1788255870675_aupn6",
+    "courseId": "c_1788255870687_ynvk7",
+    "title": "Tugas Dengan Subtask",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-08T09:44:30.690Z",
+    "link": "",
+    "subtasks": [
+      {
+        "id": "st_1788255870705_0",
+        "title": "Membuat test case",
+        "completed": true
+      }
+    ],
+    "createdAt": "2026-09-01T09:44:30.696Z"
+  },
+  {
+    "id": "t_1788258150794_vt3qg",
+    "userId": "u_1788258150774_0cvkt",
+    "courseId": "c_1788258150784_sjjl8",
+    "title": "Laporan PKPL Otomasi",
+    "description": "Dokumentasi Modul 5 PKPL",
+    "type": "Praktikum",
+    "priority": "Tinggi",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-01T22:22:30.901Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-01T10:22:30.794Z"
+  },
+  {
+    "id": "t_1788258152792_rodv4",
+    "userId": "u_1788258152777_2g8tf",
+    "courseId": "c_1788258152786_dqnfc",
+    "title": "Tugas Status",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Sedang Dikerjakan",
+    "deadline": "2026-09-08T10:22:32.788Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-01T10:22:32.792Z"
+  },
+  {
+    "id": "t_1788258154839_viyi1",
+    "userId": "u_1788258154823_jwx7o",
+    "courseId": "c_1788258154832_fem94",
+    "title": "Tugas Dengan Subtask",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-08T10:22:34.835Z",
+    "link": "",
+    "subtasks": [
+      {
+        "id": "st_1788258154848_0",
+        "title": "Membuat test case",
+        "completed": true
+      }
+    ],
+    "createdAt": "2026-09-01T10:22:34.839Z"
+  },
+  {
+    "id": "t_1788282202644_r8zjb",
+    "userId": "u_1788282202620_nwb5s",
+    "courseId": "c_1788282202635_p8mnn",
+    "title": "Laporan PKPL Otomasi",
+    "description": "Dokumentasi Modul 5 PKPL",
+    "type": "Praktikum",
+    "priority": "Tinggi",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-02T05:03:22.763Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-01T17:03:22.644Z"
+  },
+  {
+    "id": "t_1788282227568_a8e0j",
+    "userId": "u_1788282227548_whamp",
+    "courseId": "c_1788282227560_k5r4s",
+    "title": "Tugas Status",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Sedang Dikerjakan",
+    "deadline": "2026-09-08T17:03:47.563Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-01T17:03:47.568Z"
+  },
+  {
+    "id": "t_1788282250800_6ftxd",
+    "userId": "u_1788282250782_nqvua",
+    "courseId": "c_1788282250793_ozekq",
+    "title": "Tugas Dengan Subtask",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-08T17:04:10.796Z",
+    "link": "",
+    "subtasks": [
+      {
+        "id": "st_1788282250809_0",
+        "title": "Membuat test case",
+        "completed": true
+      }
+    ],
+    "createdAt": "2026-09-01T17:04:10.800Z"
+  },
+  {
+    "id": "t_1788282417316_0b5y7",
+    "userId": "u_1788282417298_6n3fo",
+    "courseId": "c_1788282417308_dffmv",
+    "title": "Laporan PKPL Otomasi",
+    "description": "Dokumentasi Modul 5 PKPL",
+    "type": "Praktikum",
+    "priority": "Tinggi",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-02T05:06:57.411Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-01T17:06:57.316Z"
+  },
+  {
+    "id": "t_1788282418609_h23xi",
+    "userId": "u_1788282418592_6knx1",
+    "courseId": "c_1788282418602_kpa8j",
+    "title": "Tugas Status",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Sedang Dikerjakan",
+    "deadline": "2026-09-08T17:06:58.605Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-01T17:06:58.609Z"
+  },
+  {
+    "id": "t_1788282419823_7v4kl",
+    "userId": "u_1788282419805_vihs5",
+    "courseId": "c_1788282419815_o8zyq",
+    "title": "Tugas Dengan Subtask",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-08T17:06:59.819Z",
+    "link": "",
+    "subtasks": [
+      {
+        "id": "st_1788282419831_0",
+        "title": "Membuat test case",
+        "completed": true
+      }
+    ],
+    "createdAt": "2026-09-01T17:06:59.823Z"
+  },
+  {
+    "id": "t_1788314126504_exsra",
+    "userId": "u_1788314126420_nbeyy",
+    "courseId": "c_1788314126473_42gq7",
+    "title": "Laporan PKPL Otomasi",
+    "description": "Dokumentasi Modul 5 PKPL",
+    "type": "Praktikum",
+    "priority": "Tinggi",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-02T13:55:27.032Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-02T01:55:26.504Z"
+  },
+  {
+    "id": "t_1788314183359_uzjdn",
+    "userId": "u_1788314183335_rfn7l",
+    "courseId": "c_1788314183349_i75b2",
+    "title": "Tugas Status",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Sedang Dikerjakan",
+    "deadline": "2026-09-09T01:56:23.353Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-02T01:56:23.359Z"
+  },
+  {
+    "id": "t_1788314275415_7066i",
+    "userId": "u_1788314275387_y6knt",
+    "courseId": "c_1788314275405_ihu7l",
+    "title": "Tugas Dengan Subtask",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-09T01:57:55.409Z",
+    "link": "",
+    "subtasks": [
+      {
+        "id": "st_1788314275432_0",
+        "title": "Membuat test case",
+        "completed": true
+      }
+    ],
+    "createdAt": "2026-09-02T01:57:55.415Z"
+  },
+  {
+    "id": "t_1788314726305_r2jje",
+    "userId": "u_1788314726286_3wee5",
+    "courseId": "c_1788314726297_q4vi3",
+    "title": "Laporan PKPL Otomasi",
+    "description": "Dokumentasi Modul 5 PKPL",
+    "type": "Praktikum",
+    "priority": "Tinggi",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-02T14:05:26.417Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-02T02:05:26.305Z"
+  },
+  {
+    "id": "t_1788314728105_8rk7c",
+    "userId": "u_1788314728088_l9x5j",
+    "courseId": "c_1788314728098_qmti4",
+    "title": "Tugas Status",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Sedang Dikerjakan",
+    "deadline": "2026-09-09T02:05:28.101Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-02T02:05:28.105Z"
+  },
+  {
+    "id": "t_1788314729547_sch7q",
+    "userId": "u_1788314729530_oe3z1",
+    "courseId": "c_1788314729540_9k85q",
+    "title": "Tugas Dengan Subtask",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-09T02:05:29.543Z",
+    "link": "",
+    "subtasks": [
+      {
+        "id": "st_1788314729555_0",
+        "title": "Membuat test case",
+        "completed": true
+      }
+    ],
+    "createdAt": "2026-09-02T02:05:29.547Z"
+  },
+  {
+    "id": "t_1788319007431_ptck4",
+    "userId": "u_1788319007406_daz7v",
+    "courseId": "c_1788319007423_ok9xy",
+    "title": "Laporan PKPL Otomasi",
+    "description": "Dokumentasi Modul 5 PKPL",
+    "type": "Praktikum",
+    "priority": "Tinggi",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-02T15:16:47.549Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-02T03:16:47.431Z"
+  },
+  {
+    "id": "t_1788319016831_1sit9",
+    "userId": "u_1788319016803_n7bf5",
+    "courseId": "c_1788319016821_8cgum",
+    "title": "Tugas Status",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Sedang Dikerjakan",
+    "deadline": "2026-09-09T03:16:56.825Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-02T03:16:56.831Z"
+  },
+  {
+    "id": "t_1788319026309_uhbf1",
+    "userId": "u_1788319026286_pxbki",
+    "courseId": "c_1788319026298_4fc58",
+    "title": "Tugas Dengan Subtask",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-09T03:17:06.303Z",
+    "link": "",
+    "subtasks": [
+      {
+        "id": "st_1788319026318_0",
+        "title": "Membuat test case",
+        "completed": true
+      }
+    ],
+    "createdAt": "2026-09-02T03:17:06.309Z"
+  },
+  {
+    "id": "t_1788319105977_5h0j0",
+    "userId": "u_1788319105959_5r4ze",
+    "courseId": "c_1788319105969_7w5ed",
+    "title": "Laporan PKPL Otomasi",
+    "description": "Dokumentasi Modul 5 PKPL",
+    "type": "Praktikum",
+    "priority": "Tinggi",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-02T15:18:26.076Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-02T03:18:25.977Z"
+  },
+  {
+    "id": "t_1788319107321_z8hkl",
+    "userId": "u_1788319107304_n83gh",
+    "courseId": "c_1788319107314_oasxr",
+    "title": "Tugas Status",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Sedang Dikerjakan",
+    "deadline": "2026-09-09T03:18:27.316Z",
+    "link": "",
+    "subtasks": [],
+    "createdAt": "2026-09-02T03:18:27.321Z"
+  },
+  {
+    "id": "t_1788319108673_2vxzj",
+    "userId": "u_1788319108649_99uqd",
+    "courseId": "c_1788319108662_v50ow",
+    "title": "Tugas Dengan Subtask",
+    "description": "",
+    "type": "Individu",
+    "priority": "Rendah",
+    "status": "Belum Dikerjakan",
+    "deadline": "2026-09-09T03:18:28.667Z",
+    "link": "",
+    "subtasks": [
+      {
+        "id": "st_1788319108686_0",
+        "title": "Membuat test case",
+        "completed": true
+      }
+    ],
+    "createdAt": "2026-09-02T03:18:28.673Z"
+  }
+]

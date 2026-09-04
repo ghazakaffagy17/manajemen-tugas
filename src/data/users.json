@@ -1,0 +1,682 @@
+[
+  {
+    "id": "u_default_1",
+    "name": "Mahasiswa",
+    "email": "mahasiswa@kuliah.com",
+    "password": "$2a$10$K9QUtTnbClvZGQWZIKT8geIr1tcvJJiTR9z8vMmbOBWkuQ/4HCwcq",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Mahasiswa",
+    "createdAt": "2026-08-11T00:00:00.000Z"
+  },
+  {
+    "id": "u_1786382545514_cahtc",
+    "name": "budi1",
+    "email": "budi1@gmail.com",
+    "password": "$2a$10$h.FFUoW0EAeI/8GuDzLXcuVBLPHxn2ehLrYgUTdSSMJfk9Mxn1QQK",
+    "university": "umm",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=budi1",
+    "createdAt": "2026-08-10T17:22:25.514Z"
+  },
+  {
+    "id": "u_1786382729362_ou0cf",
+    "name": "budi",
+    "email": "budi@gmail.com",
+    "password": "$2a$10$Q1qgCUYS9MqHThtautkcqOy2KP5MCvcR9JJG.D2xryL.BtXR9GaOy",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=budi",
+    "createdAt": "2026-08-10T17:25:29.362Z"
+  },
+  {
+    "id": "u_1786388413072_5q2ze",
+    "name": "toni",
+    "email": "toni123@gmail.com",
+    "password": "$2a$10$SpYn3fkGB0vPBRRLx371Gu/uAM5tcQnyqY7bA0Jv7tgAMgMfBQesC",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=toni",
+    "createdAt": "2026-08-10T19:00:13.072Z"
+  },
+  {
+    "id": "u_1786388716155_qeft9",
+    "name": "panembahan senopati",
+    "email": "panembahansenopati17@gmail.com",
+    "password": "$2a$10$lNHD1R1VGYciC.aQCrT0YeZIXbqIH0Vu8JZWPFWf4sHtSjtL42rCO",
+    "university": "Universitas Muhammadiyah Malang",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=panembahan%20senopati",
+    "createdAt": "2026-08-10T19:05:16.155Z"
+  },
+  {
+    "id": "u_1786429833155_a2x6d",
+    "name": "Abdulloh Ghaza Kaffagy",
+    "email": "ghazakaffagy17@gmail.com",
+    "password": "$2a$10$7ybKGTzaAX7UI7jp9P6Wvu2ScO5CF7txO.1m8B0uSTnuvaV/MDqAm",
+    "university": "Universitas Muhammadiyah Malang",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Abdulloh%20Ghaza%20Kaffagy",
+    "createdAt": "2026-08-11T06:30:33.155Z"
+  },
+  {
+    "id": "u_1787122922619_fmaak",
+    "name": "Mikail Ghaza Kaffagy",
+    "email": "mikailghaza17@gmail.com",
+    "password": "$2a$10$OCouixUM9.1oRb6wteh32.sMs7R1Hs9KY5LZ0K3Hoa3iiCeTpw3v2",
+    "university": "Universitas Muhammadiyah Malang",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Mikail%20Ghaza%20Kaffagy",
+    "createdAt": "2026-08-19T07:02:02.619Z"
+  },
+  {
+    "id": "u_1787657411466_aon16",
+    "name": "ghazi",
+    "email": "ghazi17@gmail.com",
+    "password": "$2a$10$ajZ20bIRUH07Y5EkNUogueBEfFVefOERMvi6GGPwi477oPqi3rhva",
+    "university": "ITB",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=ghazi",
+    "createdAt": "2026-08-25T11:30:11.466Z"
+  },
+  {
+    "id": "u_1788252390904_xvcnc",
+    "name": "Mahasiswa PKPL",
+    "email": "pkpl.auth.1788252390690@example.com",
+    "password": "$2a$10$TKmgqET.8lOsmnsi8wLMv.ziULFhrc9Sna1hk1qBV5Y5mxuFIUFpW",
+    "university": "Universitas Muhammadiyah Malang",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Mahasiswa%20PKPL",
+    "createdAt": "2026-09-01T08:46:30.904Z"
+  },
+  {
+    "id": "u_1788253006174_0oico",
+    "name": "Tester Course",
+    "email": "pkpl.course.1788253005996@example.com",
+    "password": "$2a$10$zqRBSmJdNnwgkPBWuA/k3.6SbWshwjLSzQv/mC9WIrIoAxL9EAroe",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Course",
+    "createdAt": "2026-09-01T08:56:46.174Z"
+  },
+  {
+    "id": "u_1788253486409_urd9n",
+    "name": "Tester Course",
+    "email": "pkpl.course.1788253486201@example.com",
+    "password": "$2a$10$8rXALHHXSmRi0OgLYOTYrOfOss5yH80o6/1l51.piVYLJnJwmNNx2",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Course",
+    "createdAt": "2026-09-01T09:04:46.409Z"
+  },
+  {
+    "id": "u_1788253728521_2mc76",
+    "name": "Tester Course",
+    "email": "pkpl.course.1788253728320@example.com",
+    "password": "$2a$10$Tp6tSQaJjlm2E3LPbf7rROABiDyDTCVLB7EQEdN.TLnpn0q9fSRh2",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Course",
+    "createdAt": "2026-09-01T09:08:48.521Z"
+  },
+  {
+    "id": "u_1788254826496_3w0hd",
+    "name": "kaffagy",
+    "email": "kaffagy17@gmail.com",
+    "password": "$2a$10$vnmeOTYBD6Vq1Ltm2r9f.uf7nzX7D1q2lFkiPZhb0TsrNGaw.OKsC",
+    "university": "ITB",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=kaffagy",
+    "createdAt": "2026-09-01T09:27:06.497Z"
+  },
+  {
+    "id": "u_1788254944763_xvprs",
+    "name": "Tester Task",
+    "email": "pkpl.task.1788254944576@example.com",
+    "password": "$2a$10$0qYFASlK144QQ/GaVDHyTuNvxh7sIeOUzSpm.NC3WS6viJg88ucRS",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Task",
+    "createdAt": "2026-09-01T09:29:04.763Z"
+  },
+  {
+    "id": "u_1788255473258_9u8f3",
+    "name": "Tester Status",
+    "email": "pkpl.status.1788255473082@example.com",
+    "password": "$2a$10$5OYAqy/h2GH4UwYoYQavXe1VQCAsxcMQeDbZDN/WbBan3yLzQ.DNK",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Status",
+    "createdAt": "2026-09-01T09:37:53.258Z"
+  },
+  {
+    "id": "u_1788255870675_aupn6",
+    "name": "Tester Subtask",
+    "email": "pkpl.subtask.1788255870501@example.com",
+    "password": "$2a$10$Kfc3lC7kdJ034YOoJgI3FOPNk.M3tU3DXrZmxS.NGscQj8HKsrDla",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Subtask",
+    "createdAt": "2026-09-01T09:44:30.675Z"
+  },
+  {
+    "id": "u_1788256438611_sawau",
+    "name": "Tester Delete",
+    "email": "pkpl.delete.1788256438415@example.com",
+    "password": "$2a$10$OMWy3vPNccNqzv6DT/G4AuWMtlUgW.TieCMAwyTn1fd7BD7.bsvUe",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Delete",
+    "createdAt": "2026-09-01T09:53:58.611Z"
+  },
+  {
+    "id": "u_1788256750253_ulmlj",
+    "name": "Tester Reset",
+    "email": "pkpl.reset.1788256750045@example.com",
+    "password": "$2a$10$NLAAWTsXWjGNnt99F/ImLOSXuTseO4hKRTKvy20AWlDpz1D2UxPIu",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Reset",
+    "createdAt": "2026-09-01T09:59:10.253Z"
+  },
+  {
+    "id": "u_1788258146167_heoho",
+    "name": "Mahasiswa PKPL",
+    "email": "pkpl.auth.1788258145994@example.com",
+    "password": "$2a$10$BMPOL0BJIPjMb9N2cJqLverWXAPikSNp2tOIDWtq7lRYDH4s6IIwi",
+    "university": "Universitas Muhammadiyah Malang",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Mahasiswa%20PKPL",
+    "createdAt": "2026-09-01T10:22:26.167Z"
+  },
+  {
+    "id": "u_1788258147874_vo4pt",
+    "name": "Tester Course",
+    "email": "pkpl.course.1788258147705@example.com",
+    "password": "$2a$10$ESEozkeGaPk9H3cMWPxfgOYe.58TFyyG6N4c6IrgahDe8mYOZj1rC",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Course",
+    "createdAt": "2026-09-01T10:22:27.874Z"
+  },
+  {
+    "id": "u_1788258150774_0cvkt",
+    "name": "Tester Task",
+    "email": "pkpl.task.1788258150594@example.com",
+    "password": "$2a$10$ZTAVAmJ9kKhjS2v6t0gRmeiRISYqSdpYmFe5nCqmHRg/gGgduGHi6",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Task",
+    "createdAt": "2026-09-01T10:22:30.774Z"
+  },
+  {
+    "id": "u_1788258152777_2g8tf",
+    "name": "Tester Status",
+    "email": "pkpl.status.1788258152620@example.com",
+    "password": "$2a$10$lZq1d6sYtD6/hgTF/Z6B/.Z6/Y.0oBXhhvHP7IkKbrwSP/LBfT2Yu",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Status",
+    "createdAt": "2026-09-01T10:22:32.777Z"
+  },
+  {
+    "id": "u_1788258154823_jwx7o",
+    "name": "Tester Subtask",
+    "email": "pkpl.subtask.1788258154659@example.com",
+    "password": "$2a$10$kf6yxG4bZ2kBJ3lUhxrykOIglidovqX4t/2gqxJL4VuisnO7USKii",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Subtask",
+    "createdAt": "2026-09-01T10:22:34.823Z"
+  },
+  {
+    "id": "u_1788258156829_n4m39",
+    "name": "Tester Delete",
+    "email": "pkpl.delete.1788258156659@example.com",
+    "password": "$2a$10$sXQ7vFo9I82lUMRnCzAgPeiWmjdJhrjydocIoJ4LxA21MCQWnH7bu",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Delete",
+    "createdAt": "2026-09-01T10:22:36.829Z"
+  },
+  {
+    "id": "u_1788258158835_md144",
+    "name": "Tester Reset",
+    "email": "pkpl.reset.1788258158672@example.com",
+    "password": "$2a$10$soRakYMjNF0wNm92KBOVwu/XARxqHXmeyw3Nw0TV.Lqs0AEms47wS",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Reset",
+    "createdAt": "2026-09-01T10:22:38.835Z"
+  },
+  {
+    "id": "u_1788282130338_pio5f",
+    "name": "Mahasiswa PKPL",
+    "email": "pkpl.auth.1788282130122@example.com",
+    "password": "$2a$10$1HVto9nLTXJZekjIFxRrfevPMh3YOXjzJJaqFJ13s84sDgcRUKoRq",
+    "university": "Universitas Muhammadiyah Malang",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Mahasiswa%20PKPL",
+    "createdAt": "2026-09-01T17:02:10.338Z"
+  },
+  {
+    "id": "u_1788282154337_ngusr",
+    "name": "Tester Course",
+    "email": "pkpl.course.1788282154162@example.com",
+    "password": "$2a$10$O09Up2kvBXdkmjfKZlgeG.WlCV6o8Sbom3wDfDlejurNfK52cDh5y",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Course",
+    "createdAt": "2026-09-01T17:02:34.337Z"
+  },
+  {
+    "id": "u_1788282202620_nwb5s",
+    "name": "Tester Task",
+    "email": "pkpl.task.1788282202436@example.com",
+    "password": "$2a$10$mqj24L8/vzJjd1a0V0hej.Psk.N6N2Sui2Uzpkm6KJaLSB9eVAfz.",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Task",
+    "createdAt": "2026-09-01T17:03:22.620Z"
+  },
+  {
+    "id": "u_1788282227548_whamp",
+    "name": "Tester Status",
+    "email": "pkpl.status.1788282227369@example.com",
+    "password": "$2a$10$eWvsaxdZkyfVEC.f0ZftB.8EwSytYf45o57UtRqkdKNWbk3RLIGJ.",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Status",
+    "createdAt": "2026-09-01T17:03:47.548Z"
+  },
+  {
+    "id": "u_1788282250782_nqvua",
+    "name": "Tester Subtask",
+    "email": "pkpl.subtask.1788282250607@example.com",
+    "password": "$2a$10$22jryNgy9geNuh5h04fdseJdFd6XTpbSRAhuTXWcRRcEOl9uWiQmG",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Subtask",
+    "createdAt": "2026-09-01T17:04:10.783Z"
+  },
+  {
+    "id": "u_1788282269501_p4g7k",
+    "name": "Tester Delete",
+    "email": "pkpl.delete.1788282269322@example.com",
+    "password": "$2a$10$lWk7/KZzwDU6s4JHN03LS.vYGpVgZcPBN8VuAwgnKExdLB9rOhFUa",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Delete",
+    "createdAt": "2026-09-01T17:04:29.501Z"
+  },
+  {
+    "id": "u_1788282288505_2m5ku",
+    "name": "Tester Reset",
+    "email": "pkpl.reset.1788282288094@example.com",
+    "password": "$2a$10$/1Ex1uHp5DTIsCqo.OyYpO1FPuxG9ANPR.FFWhUFloWUPj5vQV7Mm",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Reset",
+    "createdAt": "2026-09-01T17:04:48.505Z"
+  },
+  {
+    "id": "u_1788282413789_qxgwk",
+    "name": "Mahasiswa PKPL",
+    "email": "pkpl.auth.1788282413596@example.com",
+    "password": "$2a$10$P0tFYRNEpCHCHn17pvu0nOqzqFChCFZBeyuYAhYL9XXvwRj6hygrK",
+    "university": "Universitas Muhammadiyah Malang",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Mahasiswa%20PKPL",
+    "createdAt": "2026-09-01T17:06:53.789Z"
+  },
+  {
+    "id": "u_1788282415590_mx1a6",
+    "name": "Tester Course",
+    "email": "pkpl.course.1788282415390@example.com",
+    "password": "$2a$10$/cl5cdWw4YTAS5cfA2bY0uDv2VAFyG.6dN1jaedP.4OrYDJwo5Gja",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Course",
+    "createdAt": "2026-09-01T17:06:55.590Z"
+  },
+  {
+    "id": "u_1788282417298_6n3fo",
+    "name": "Tester Task",
+    "email": "pkpl.task.1788282417138@example.com",
+    "password": "$2a$10$j3T25CBI1LQzWUWl3F2ssubhNPrpm/.oUlMjCpTI3DMAzNCtRxpTa",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Task",
+    "createdAt": "2026-09-01T17:06:57.298Z"
+  },
+  {
+    "id": "u_1788282418592_6knx1",
+    "name": "Tester Status",
+    "email": "pkpl.status.1788282418434@example.com",
+    "password": "$2a$10$SFFwONkDkl9QaN7Nqwy/4OU4jkevY0i.SwUmZEYfrFqHMPd079QVO",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Status",
+    "createdAt": "2026-09-01T17:06:58.592Z"
+  },
+  {
+    "id": "u_1788282419805_vihs5",
+    "name": "Tester Subtask",
+    "email": "pkpl.subtask.1788282419652@example.com",
+    "password": "$2a$10$peKuNP/zmmyUNbXfW23d6.i3cqDCf3cscYyVFhhiZTYxQDG3OQpcG",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Subtask",
+    "createdAt": "2026-09-01T17:06:59.805Z"
+  },
+  {
+    "id": "u_1788282421053_51pmn",
+    "name": "Tester Delete",
+    "email": "pkpl.delete.1788282420896@example.com",
+    "password": "$2a$10$afOigSCOgmH43.1JSuK7.ep925s3OK4Tww9LVqury5FHxlFVKcD1S",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Delete",
+    "createdAt": "2026-09-01T17:07:01.053Z"
+  },
+  {
+    "id": "u_1788282422306_fhobl",
+    "name": "Tester Reset",
+    "email": "pkpl.reset.1788282422151@example.com",
+    "password": "$2a$10$.lje2.k40T2dqsobggYvB.7by.udgJi6K/shNJroSn332vXmz/UfW",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Reset",
+    "createdAt": "2026-09-01T17:07:02.306Z"
+  },
+  {
+    "id": "u_1788313842241_yd174",
+    "name": "Mahasiswa PKPL",
+    "email": "pkpl.auth.1788313842016@example.com",
+    "password": "$2a$10$LHUqhVOCJR2I6ru4IY1uJ.eh06JgpFVAG0DdaPlWBDqOYtoVKxX0q",
+    "university": "Universitas Muhammadiyah Malang",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Mahasiswa%20PKPL",
+    "createdAt": "2026-09-02T01:50:42.241Z"
+  },
+  {
+    "id": "u_1788313956499_cnbi1",
+    "name": "Tester Course",
+    "email": "pkpl.course.1788313956254@example.com",
+    "password": "$2a$10$w15ArpN75epB.qc9aPEnieG/MK/7n9sSn7uNeudS02m3NTonDa7/W",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Course",
+    "createdAt": "2026-09-02T01:52:36.499Z"
+  },
+  {
+    "id": "u_1788314126420_nbeyy",
+    "name": "Tester Task",
+    "email": "pkpl.task.1788314125958@example.com",
+    "password": "$2a$10$jxcwS3JpZY7//0gC4U8Vdu/Sj3Let/0NmzlFyg76fCo4DCiWzJAh6",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Task",
+    "createdAt": "2026-09-02T01:55:26.420Z"
+  },
+  {
+    "id": "u_1788314183335_rfn7l",
+    "name": "Tester Status",
+    "email": "pkpl.status.1788314183156@example.com",
+    "password": "$2a$10$i3ACo80VupDF7q62mrOubup/4ygDlP4/VJECtYUSMORrTjHNGao1i",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Status",
+    "createdAt": "2026-09-02T01:56:23.335Z"
+  },
+  {
+    "id": "u_1788314275387_y6knt",
+    "name": "Tester Subtask",
+    "email": "pkpl.subtask.1788314275166@example.com",
+    "password": "$2a$10$Fl/zwZbPwtcO2N.6It7LD.BwAug2CoPnOuPq4L2imnkc/J87KtsrO",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Subtask",
+    "createdAt": "2026-09-02T01:57:55.387Z"
+  },
+  {
+    "id": "u_1788314348043_ma5wg",
+    "name": "Tester Delete",
+    "email": "pkpl.delete.1788314347866@example.com",
+    "password": "$2a$10$o09ySDG4uSRmnREYtbn0due7mXXZgyV2DM967i7HvZOJuapvI1du2",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Delete",
+    "createdAt": "2026-09-02T01:59:08.043Z"
+  },
+  {
+    "id": "u_1788314433230_llefz",
+    "name": "Tester Reset",
+    "email": "pkpl.reset.1788314433014@example.com",
+    "password": "$2a$10$6wqoQezXikjMvoSP9gtN9.X8hVnArQJN9ZgxEtVwFKDpsyX5grEyO",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Reset",
+    "createdAt": "2026-09-02T02:00:33.230Z"
+  },
+  {
+    "id": "u_1788314722099_culra",
+    "name": "Mahasiswa PKPL",
+    "email": "pkpl.auth.1788314721919@example.com",
+    "password": "$2a$10$84srEwEFBtECK1dCQSNTdudrDrTadMBenxQa3VAUTFuwZtMLu1vXe",
+    "university": "Universitas Muhammadiyah Malang",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Mahasiswa%20PKPL",
+    "createdAt": "2026-09-02T02:05:22.099Z"
+  },
+  {
+    "id": "u_1788314724110_yyqid",
+    "name": "Tester Course",
+    "email": "pkpl.course.1788314723948@example.com",
+    "password": "$2a$10$oEs9TZelGbOcx9WqJhsgH.PFLpXSzKbfcECShe/GI3oVMp7Hyrfjy",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Course",
+    "createdAt": "2026-09-02T02:05:24.110Z"
+  },
+  {
+    "id": "u_1788314726286_3wee5",
+    "name": "Tester Task",
+    "email": "pkpl.task.1788314726105@example.com",
+    "password": "$2a$10$NKECrixQd/RIKfcz4XxnQ.cYbSUP9BjpnJT.gpl07WOav7Zo5dy42",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Task",
+    "createdAt": "2026-09-02T02:05:26.286Z"
+  },
+  {
+    "id": "u_1788314728088_l9x5j",
+    "name": "Tester Status",
+    "email": "pkpl.status.1788314727931@example.com",
+    "password": "$2a$10$y1cmkphwUdgFgRBQkBQE5eRb3OA7H6WF9xMIen6vAGQHtGr333b/2",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Status",
+    "createdAt": "2026-09-02T02:05:28.088Z"
+  },
+  {
+    "id": "u_1788314729530_oe3z1",
+    "name": "Tester Subtask",
+    "email": "pkpl.subtask.1788314729370@example.com",
+    "password": "$2a$10$FWEhD7TO6AbwpE7jJ0bAlOQC06Yr3zMlN.UDjIHSxBguI/8WaXFnm",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Subtask",
+    "createdAt": "2026-09-02T02:05:29.530Z"
+  },
+  {
+    "id": "u_1788314731373_u97q4",
+    "name": "Tester Delete",
+    "email": "pkpl.delete.1788314730971@example.com",
+    "password": "$2a$10$Qk3ew27T9/DkvWh8wjeWkuVk2703Hu3Czo.cpTsCyNfXwICXCE4nu",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Delete",
+    "createdAt": "2026-09-02T02:05:31.373Z"
+  },
+  {
+    "id": "u_1788314733424_xkp0l",
+    "name": "Tester Reset",
+    "email": "pkpl.reset.1788314733242@example.com",
+    "password": "$2a$10$7U82o/8tLWEJs8gkzxhcIu2o9d4kxIZ6B328OA28dmflJ2g7Mfkea",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Reset",
+    "createdAt": "2026-09-02T02:05:33.424Z"
+  },
+  {
+    "id": "u_1788318945349_w2jhs",
+    "name": "Mahasiswa PKPL",
+    "email": "pkpl.auth.1788318945163@example.com",
+    "password": "$2a$10$GuBCMbxU0M.vXqpY153RIeiRNWxj.EvdZm..sxRKByedhsmrCjTke",
+    "university": "Universitas Muhammadiyah Malang",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Mahasiswa%20PKPL",
+    "createdAt": "2026-09-02T03:15:45.349Z"
+  },
+  {
+    "id": "u_1788318987259_3em5g",
+    "name": "Tester Course",
+    "email": "pkpl.course.1788318987071@example.com",
+    "password": "$2a$10$Sfqexagg9C8RlFcJr6eu/.ZIgffi5rHym0mAKbIwhO5L2TDxRKASm",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Course",
+    "createdAt": "2026-09-02T03:16:27.259Z"
+  },
+  {
+    "id": "u_1788319007406_daz7v",
+    "name": "Tester Task",
+    "email": "pkpl.task.1788319007215@example.com",
+    "password": "$2a$10$EdBW6jd2pZRgTZmHIyMCL.7WNnk3NAay4Dv1fzNaf1HugSDxK7cSy",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Task",
+    "createdAt": "2026-09-02T03:16:47.406Z"
+  },
+  {
+    "id": "u_1788319016803_n7bf5",
+    "name": "Tester Status",
+    "email": "pkpl.status.1788319016634@example.com",
+    "password": "$2a$10$LVAnHpeIWG3rYFRRIQti4.o5EIbny/P1xllnmW3TxnGTitqrx6N8W",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Status",
+    "createdAt": "2026-09-02T03:16:56.803Z"
+  },
+  {
+    "id": "u_1788319026286_pxbki",
+    "name": "Tester Subtask",
+    "email": "pkpl.subtask.1788319026110@example.com",
+    "password": "$2a$10$7KIDDLA4ZsIvmDsNET90pe/8iggtqrGl2xamaS00F4Wl8dC4Rrb56",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Subtask",
+    "createdAt": "2026-09-02T03:17:06.286Z"
+  },
+  {
+    "id": "u_1788319035582_wtige",
+    "name": "Tester Delete",
+    "email": "pkpl.delete.1788319035415@example.com",
+    "password": "$2a$10$L92R5Dzfmo3bYpVBccsJu.ctx3nxvKtYEoCqfFOQhFFZAx.5x1B1.",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Delete",
+    "createdAt": "2026-09-02T03:17:15.582Z"
+  },
+  {
+    "id": "u_1788319045018_a02uo",
+    "name": "Tester Reset",
+    "email": "pkpl.reset.1788319044838@example.com",
+    "password": "$2a$10$QWBtuPstnxn1ztHvn3KbGeYq7ybymQXVFVBNuCW/Rn7nsVMq73/8K",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Reset",
+    "createdAt": "2026-09-02T03:17:25.018Z"
+  },
+  {
+    "id": "u_1788319102802_tvtnd",
+    "name": "Mahasiswa PKPL",
+    "email": "pkpl.auth.1788319102617@example.com",
+    "password": "$2a$10$7p7U0rZmgo9V1mJiCvshCurRX8Zmx4zn67DWjCfUe8d8cSOh9GOFK",
+    "university": "Universitas Muhammadiyah Malang",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Mahasiswa%20PKPL",
+    "createdAt": "2026-09-02T03:18:22.802Z"
+  },
+  {
+    "id": "u_1788319104425_1osak",
+    "name": "Tester Course",
+    "email": "pkpl.course.1788319104264@example.com",
+    "password": "$2a$10$QYCqzp9BUh14UTVvwZaZ0O316EGkGAdJxsMq3BC4KcFL0W6Y31aU2",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Course",
+    "createdAt": "2026-09-02T03:18:24.425Z"
+  },
+  {
+    "id": "u_1788319105959_5r4ze",
+    "name": "Tester Task",
+    "email": "pkpl.task.1788319105799@example.com",
+    "password": "$2a$10$IpiqtlX/5lV7ZRzVw5K5Nu5f6wRBXCDOxoVMmK10VuZbff8Az5htG",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Task",
+    "createdAt": "2026-09-02T03:18:25.959Z"
+  },
+  {
+    "id": "u_1788319107304_n83gh",
+    "name": "Tester Status",
+    "email": "pkpl.status.1788319107148@example.com",
+    "password": "$2a$10$dQdkFicaChYKgcM.zvF4mOwyRK.N/9cPPYBRSL9vtwd1YUU3Yazxy",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Status",
+    "createdAt": "2026-09-02T03:18:27.304Z"
+  },
+  {
+    "id": "u_1788319108649_99uqd",
+    "name": "Tester Subtask",
+    "email": "pkpl.subtask.1788319108457@example.com",
+    "password": "$2a$10$TGBBtzYlJcHiJvTUL.aES.BY5nIX7UcIzzi4oXuIUoouGh85i4uXO",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Subtask",
+    "createdAt": "2026-09-02T03:18:28.649Z"
+  },
+  {
+    "id": "u_1788319110021_wz7h4",
+    "name": "Tester Delete",
+    "email": "pkpl.delete.1788319109863@example.com",
+    "password": "$2a$10$N54t.7ZGw8lvw7W4iDweXeYRywn52kp3a5ZiALxAwOl9GrDRcU1t.",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Delete",
+    "createdAt": "2026-09-02T03:18:30.021Z"
+  },
+  {
+    "id": "u_1788319111266_jjozr",
+    "name": "Tester Reset",
+    "email": "pkpl.reset.1788319111105@example.com",
+    "password": "$2a$10$YcR0P1tzCND3xLldOSfNpOAAuKsZHva1dtI8uyGN.W4JKwhKEvfhC",
+    "university": "Universitas Indonesia",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Tester%20Reset",
+    "createdAt": "2026-09-02T03:18:31.266Z"
+  },
+  {
+    "id": "u_1788319800850_j1l02",
+    "name": "Mahasiswa PKPL",
+    "email": "pkpl.auth.1788319800695@example.com",
+    "password": "$2a$10$V/FkWQhtHlrW45KxoXS9v.cptKzK9lrcMTfHTtl7we5Sy1oQOOdym",
+    "university": "Universitas Muhammadiyah Malang",
+    "major": "Teknik Informatika",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Mahasiswa%20PKPL",
+    "createdAt": "2026-09-02T03:30:00.850Z"
+  }
+]

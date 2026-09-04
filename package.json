@@ -1,0 +1,31 @@
+{
+  "name": "academia-task-manager",
+  "version": "1.0.0",
+  "description": "Sistem Manajemen Tugas Mata Kuliah Perkuliahan Fullstack Node.js + Express & Custom Modern HTML/CSS/JS UI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "task-manager",
+    "matkul",
+    "kuliah",
+    "kanban",
+    "express",
+    "json-db"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "cypress": "^15.21.1",
+    "jest": "^30.4.2"
+  }
+}
